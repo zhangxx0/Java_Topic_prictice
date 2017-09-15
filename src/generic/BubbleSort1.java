@@ -22,6 +22,7 @@ public class BubbleSort1 {
 					sorted =false;
 				}
 			}
+			
 			System.out.println("趟数：" + j +":"+ Arrays.toString(arrsort));
 			if (sorted) {
 				break;
