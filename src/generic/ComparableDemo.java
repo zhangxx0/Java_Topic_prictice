@@ -1,10 +1,16 @@
 package generic;
 
+import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.Date;
+import java.util.Queue;
+import java.util.TreeMap;
+import java.util.TreeSet;
+
+import javax.management.Query;
 
 public class ComparableDemo {
 
@@ -31,6 +37,24 @@ public class ComparableDemo {
 		// 
 		Collections.sort(new ArrayList<String>());
 		
+		
+		// TreeSet 使用带比较器的构造方法
+		StringComp stringComp = new StringComp();
+		TreeSet treeset = new TreeSet(stringComp);
+		
+		treeset.add("b");
+		treeset.add("ab");
+		treeset.add("abc");
+		treeset.add("bcd");
+		treeset.add("abcd");
+		
+		System.out.println("treeset:"+treeset);
+		
+		// TreeMap 同上
+		TreeMap treeMap = new TreeMap(stringComp);
+		
+		
+		Queue queue = new ArrayDeque();
 		
 		
 	}
