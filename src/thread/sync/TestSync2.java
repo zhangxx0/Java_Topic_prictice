@@ -1,4 +1,4 @@
-package thread.create;
+package thread.sync;
 
 public class TestSync2 implements Runnable{
     public void run() {
