@@ -3,6 +3,11 @@ package thread.sync;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
+/**
+ * 循环打印ABC
+ * @author xinxin
+ *
+ */
 public class ABC {
 	private static int state = 0;
 
