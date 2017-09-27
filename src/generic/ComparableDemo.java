@@ -3,6 +3,7 @@ package generic;
 import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Calendar;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.Date;
@@ -56,6 +57,9 @@ public class ComparableDemo {
 		
 		Queue queue = new ArrayDeque();
 		
+		
+		Calendar a=Calendar.getInstance();
+		System.out.println(a.get(Calendar.YEAR));//得到年
 		
 	}
 }
